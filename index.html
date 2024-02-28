@@ -14,29 +14,51 @@
     />
 
     <!-- css local -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <body>
-    <header>
-      <h1>Mi Página Web</h1>
-      <nav>
-        <!-- Puedes incluir enlaces de navegación aquí -->
+  <body class="text-bg-dark">
+    <header class="ps-lg-5">
+      <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-3" href="#">
+            <img
+              src="./assets/img/sh2.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-top"
+            />
+            SuperHero
+          </a>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section id="busqueda">
-        <h2>Buscar</h2>
-        <form action="#" method="get">
-          <label for="searchQuery">Buscar:</label>
-          <input
-            type="text"
-            id="searchQuery"
-            name="q"
-            placeholder="Ingrese su búsqueda"
-          />
-          <button type="submit">Buscar</button>
+    <main
+      class="container pt-3 d-flex flex-column align-items-center text-bg-dark"
+    >
+      <section id="busqueda" class="row">
+        <div class="mb-3 mx-auto col-md-6 col-lg-8 text-center">
+          <img src="./assets/img/sh1.jpg" alt="" class="container" />
+          <h1 class="pt-3 pt-md-2 ">Encuentra tu SuperHero</h1>
+        </div>
+
+        <form class="text-center col-10 col-md-8 mx-auto">
+          <div class="mx-auto">
+            <label for="formGroupExampleInput" class="form-label"
+              >Ingresa el número del SuperHero</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-info mt-3 ">
+            Buscar
+          </button>
         </form>
       </section>
 
@@ -45,7 +67,7 @@
 
     <footer>
       <!-- Contenido del pie de página -->
-      <p>&copy; 2024 Mi Página Web</p>
+      <p></p>
     </footer>
 
     <!-- -------------------------------------------------------------------- -->
@@ -69,6 +91,5 @@
 
     <!-- js local -->
     <script src="./assets/js/script.js"></script>
-
   </body>
 </html>
