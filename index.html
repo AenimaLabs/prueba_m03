@@ -40,8 +40,10 @@
       </nav>
     </header>
 
+  
+
     <main
-      class="container  d-flex flex-column align-items-center text-bg-dark"
+      class="container mt-3 d-flex flex-column align-items-center text-bg-dark"
     >
       <section id="busqueda" class="row">
         <div class=" mx-auto col-sm-10  col-lg-8 text-center">
@@ -51,26 +53,42 @@
 
         <form class="text-center col-10 col-md-8 mx-auto">
           <div class="mx-auto">
-            <label for="formGroupExampleInput" class="form-label fs-5"
+            <label for="numHeroInput" class="form-label fs-5" 
               >Ingresa el número del SuperHero</label
             >
+            
             <input
               type="text"
               class="form-control"
               id="numHeroInput"
+              placeholder="del 1 al 732"
             />
           </div>
 
-          <button id="butTon" type="submit" class="btn btn-info mt-3">Buscar</button>
+          <button id="butTon" type="submit" class="btn btn-info mt-3" >Buscar</button>
+          
         </form>
       </section>
 
+    
       <!-- Otras secciones del contenido principal pueden ir aquí -->
     </main>
 
+    
+    <section class="row container-fluid mt-5 mx-auto">
+      <div id="cardContainer" class="col-md-7"></div>
+      <div id="chartContainer" class="col-md-5 mt-2 mt-md-0"></div>
+    </section>
+      
+    
+  
+    
+    
+    
+
     <footer>
       <!-- Contenido del pie de página -->
-      <p></p>
+      
     </footer>
 
     <!-- -------------------------------------------------------------------- -->
@@ -90,7 +108,7 @@
     ></script>
 
     <!-- canvasjs -->
-    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
     <!-- js local -->
     <script src="./assets/js/script.js"></script>
