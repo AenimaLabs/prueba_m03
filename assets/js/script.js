@@ -238,6 +238,7 @@ window.onload = function () {
 
             //vaciar el container de la card cada vez que busque un superhero
             $('#cardContainer').empty()
+            $('#chartContainer').empty()
             
             
            
