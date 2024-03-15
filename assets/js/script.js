@@ -128,7 +128,7 @@ function pasandoaArregloPS(arreglo) {
 function mostrarGrafico(response) {
 
     let arregloPoderes = pasandoaArregloPS(response.powerstats)
-    
+
     if (arregloPoderes.every(poder => poder.y === 0)) {
         alert('Los valores de intelligence, strength, speed, durability, power y combat son 0. No se puede graficar.');
         return;
@@ -149,8 +149,8 @@ function mostrarGrafico(response) {
             text: `Estadísticas de Poder para ${response.name}`,
             fontFamily: "Bangers, system-ui"
         },
-       
-        theme:"dark2",
+
+        theme: "dark2",
         responsive: true,
         legend: {
             cursor: "pointer",
@@ -162,7 +162,7 @@ function mostrarGrafico(response) {
             showInLegend: true,
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name}  ({y})",
-            dataPoints: dataPoints           
+            dataPoints: dataPoints
         }]
     });
     chart.render();
@@ -185,13 +185,13 @@ function explodePie(e) {
             $(this).fadeOut(1000);
         });
     };
- 
 
-$.fn.fadeInPlugin = function () {
-    return this.each(function () {
-        $(this).fadeIn(1000);
-    });
-};
+
+    $.fn.fadeInPlugin = function () {
+        return this.each(function () {
+            $(this).fadeIn(1000);
+        });
+    };
 
 
 }(jQuery));
@@ -204,19 +204,13 @@ window.onload = function () {
         $("#navnav").click(function (event) {
             event.preventDefault()
 
-            const plugin = $(".fotoform")            
+            const plugin = $(".fotoform")
             plugin.fadeInPlugin()
             $('#chartContainer').empty()
             $('#cardContainer').empty()
 
-                      
-           
 
-            
-            // consultaAPI(numHero)
-            // $("#numHeroInput").val('');
-
-        });      
+        });
 
 
         $("#butTon").click(function (event) {
@@ -233,15 +227,15 @@ window.onload = function () {
                 return
             }
 
-             const plugin = $(".fotoform")            
+            const plugin = $(".fotoform")
             plugin.fadeOutPlugin()
 
             //vaciar el container de la card cada vez que busque un superhero
             $('#cardContainer').empty()
             $('#chartContainer').empty()
-            
-            
-           
+
+
+
 
             consultaAPI(numHero)
             $("#numHeroInput").val('');
