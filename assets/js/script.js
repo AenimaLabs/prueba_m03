@@ -133,6 +133,7 @@ function mostrarGrafico(response) {
         alert('Los valores de intelligence, strength, speed, durability, power y combat son 0. No se puede graficar.');
         return;
     }
+    else{
     let dataPoints = [];
 
     for (let i = 0; i < arregloPoderes.length; i++) {
@@ -176,7 +177,7 @@ function explodePie(e) {
     }
     e.chart.render();
 
-};
+}};
 
 (function (jQuery) {
 
