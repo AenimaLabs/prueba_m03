@@ -157,6 +157,7 @@ function mostrarGrafico(response) {
             cursor: "pointer",
             itemclick: explodePie,
             fontFamily: "Bangers, system-ui"
+            
         },
         data: [{
             type: "pie",
